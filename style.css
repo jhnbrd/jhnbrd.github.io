@@ -1,5 +1,11 @@
 @import url('https://fonts.cdnfonts.com/css/motiva-sans');
 
+@font-face {
+    font-family: "San Francisco";
+    font-weight: 400;
+    src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+  }
+
 body {
     background-color: #000000;
     overflow-x: hidden;
@@ -238,7 +244,7 @@ b {
 }
 
 #profile-content {
-    padding: 12px 12px 64px 12px;
+    padding: 12px 12px 12px 12px;
     max-width: 976px;
     margin: 0 auto;
     font-size: 13px;
@@ -251,7 +257,7 @@ b {
 }
 
 #profile-content-inner {
-    padding-bottom: 120px;
+    padding-bottom: 0;
 }
 
 #profile-rightcol {
@@ -467,7 +473,27 @@ b {
     float: left;
     margin-right: 8px;
     width: 184px;
-    max-width: 33%;
+}
+
+.cert-info-img {
+    float: left;
+    margin-right: 8px;
+    width: 69px;
+}
+
+.text-issued-by {
+    font-size: 12px;
+    color: #969696;
+}
+
+.project-capsule {
+    max-width: 184px;
+    max-height: 69px;
+}
+
+.cert-capsule {
+    max-width: 69px;
+    max-height: 69px;
 }
 
 .project-info-details {
@@ -482,6 +508,11 @@ b {
 }
 
 .profile-group-img{
+    width: 64px;
+    height: 64px;
+}
+
+.profile-educ-img {
     width: 64px;
     height: 64px;
 }
@@ -531,6 +562,30 @@ b {
     width: 164px;
     transform-origin: 55% 40%;
     transform: scale(1.75); 
+}
+
+.profile-modal {
+    color: #ffffff;
+}
+
+.profile-modal-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: none;
+}
+
+.profile-modal-close {
+    font-family: 'Sans Francisco';
+    font-weight: 900;
+    color: #6c757d;
+    font-size: 20px;
+    background-color: transparent;
+    border: 0;
+}
+
+.profile-modal-close:hover {
+    color: #343a40;
 }
 
 @media screen and (max-width: 965px) {
@@ -606,6 +661,10 @@ b {
         display: flex;
         flex-direction: column;
         height: 100px;
+    }
+
+    .cert-info {
+        height: 150px;
     }
 
     .project-info-name{
